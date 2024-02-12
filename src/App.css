@@ -1,0 +1,70 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+img{
+  margin-top: 2em;
+  max-width: 480px;
+  width: 90%;
+}
+h1{
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0.5em 0;
+}
+.calculatorContainer{
+  margin: auto;
+  padding: 2em 0;
+  max-width: 400px;
+  width: 90vw;
+  min-width: 300px;
+  max-height: 600px;
+  background-color: #404064;
+  border-radius: 12px;
+  border: 5px solid #616192;
+  
+  display: grid;
+  grid-template-columns: 
+     repeat(4, minmax(40px, 20%))
+  ;
+  grid-template-areas: 
+      'screen screen screen screen'
+      'b1 b2 b3 bPlus'
+      'b4 b5 b6 bMinus'
+      'b7 b8 b9 bMult'
+      'bClearOne bPoint b0 bDiv'
+      'bClear bClear bEq bEq'
+  ;
+  gap: 10px;
+  place-content: center;
+}
+button{
+
+  padding: auto;
+  width: 100%;
+  display: flex;
+  flex: 1 0 4rem;
+}
+#b1{ grid-area: b1;}
+#b2{ grid-area: b2;}
+#b3{ grid-area: b3;}
+#b4{ grid-area: b4;}
+#b5{ grid-area: b5;}
+#b6{ grid-area: b6;}
+#b7{ grid-area: b7;}
+#b8{ grid-area: b8;}
+#b9{ grid-area: b9;}
+#b0{ grid-area: b0;}
+#bPoint{ grid-area: bPoint;}
+#bEq{ grid-area: bEq;}
+#bMult{ grid-area: bMult;}
+#bDiv{ grid-area: bDiv;}
+#bMinus{ grid-area: bMinus;}
+#bPlus{ grid-area: bPlus;}
+#bClear{ grid-area: bClear;}
+
